@@ -1,88 +1,16 @@
-# P2P Web Share
+# React + Vite
 
-## Objective
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-P2P Web Share is a browser-to-browser file transfer application that allows users to send files directly between devices using WebRTC. The signaling server is only used for connection establishment and does not store or process file data.
+Currently, two official plugins are available:
 
-## Features Implemented
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- Direct Peer-to-Peer File Transfer
-- Peer Connection using PeerJS (WebRTC)
-- Room Creation and Joining
-- File Selection and Sending
-- Real-Time Connection Status
-- Transfer Progress Indicator
-- Browser-Based User Interface
-- Socket.io Signaling Server
+## React Compiler
 
-## Tech Stack
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Frontend
-- React.js
-- Vite
-- PeerJS
+## Expanding the ESLint configuration
 
-### Backend
-- Node.js
-- Express.js
-- Socket.io
-
-## Project Structure
-
-```text
-P2P-WebShare/
-├── client/
-├── server/
-```
-
-## Installation
-
-### Backend
-
-```bash
-cd server
-npm install
-node index.js
-```
-
-### Frontend
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-## Usage
-
-1. Start backend server.
-2. Start frontend application.
-3. Open the application in two browser tabs.
-4. Copy Peer ID from one tab.
-5. Paste it into the other tab.
-6. Click Connect.
-7. Select a file.
-8. Click Send File.
-9. The receiver gets the file directly through the P2P connection.
-
-## Current Status
-
-Completed MVP:
-- Peer Connection
-- File Transfer
-- Room Management
-- Progress Indicator
-- Connection Status
-
-## Future Improvements
-
-- Chunk-Based Transfer
-- SHA-256 Verification
-- End-to-End Encryption
-- Multi-Peer Support
-- Resume Interrupted Transfers
-
-## Author
-
-Divyansh Pandey
-IIT Roorkee
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
